@@ -115,6 +115,11 @@ The main tasks for this exercise are as follows:
 
       > **Note**: To identify the names of the Azure regions to use when setting the value of the **LOCATION** variable, run `az account list-locations --query "[].{name:name}" -o table`. Make sure to use the notation which does not include a space, e.g. **eastus** rather than **US East**.
 
+1. From the Cloud Shell pane, run the following to create a new Resource Group:
+
+   ```Bash
+   az group create --name NetworkWatcherRG --location $LOCATION
+   ```
 1. From the Cloud Shell pane, run the following to create an instance of Network Watcher in preparation for the upcoming exercises in this lab:
 
    ```Bash
